@@ -4,6 +4,9 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING
   }, {});
   Users.associate = function (models) {
+    Users.hasMany(models.orders, {
+      foreignKey: 'uid',
+    })
   };
 
   //  sequelize.sync()
