@@ -10,17 +10,18 @@ module.exports = (sequelize, DataTypes) => {
 
   // sequelize.sync()
   // .then(() => {
-  //   Products.create({name: 'CAFÉ AMERICANO', price:});
-  //   Products.create({name: 'CAFÉ CO', price:});
-  //   Products.create({name: 'MISTO', price:});
-  //   Products.create({name: 'SUCO NATURAL', price:});
-  //   Products.create({name: 'HAMBÚRGER', price:});
-  //   Products.create()({name: 'BATATA', price:});
-  //   Products.create()({name: 'ANÉIS DE', price:});
-  //   Products.create()({name: 'ÁGUA 500', price:});
-  //   Products.create()({name: 'ÁGUA 750', price:});
-  //   Products.create()({name: 'REFRIGERANTE', price:});
-  //   Products.create()({name: 'REFRIGERANTE', price:});
+  //   Products.create({name: 'CAFÉ AMERICANO', price: 5});
+  //   Products.create({name: 'CAFÉ COM LEITE', price: 7});
+  //   Products.create({name: 'MISTO QUENTE', price: 10});
+  //   Products.create({name: 'SUCO NATURAL', price: 7});
+  //   Products.create({name: 'HAMBÚRGER SIMPLES', price: 10});
+  //   Products.create({name: 'HAMBÚRGER DUPLO', price: 15});
+  //   Products.create({name: 'BATATA', price: 5});
+  //   Products.create({name: 'ANÉIS DE CEBOLA', price: 5});
+  //   Products.create({name: 'ÁGUA 500', price: 5});
+  //   Products.create({name: 'ÁGUA 750', price: 7});
+  //   Products.create({name: 'REFRIGERANTE 500ML', price: 7});
+  //   Products.create({name: 'REFRIGERANTE 750ML', price: 10});
   // });
   return Products;
 };

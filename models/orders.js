@@ -5,15 +5,15 @@ module.exports = (sequelize, DataTypes) => {
     uid: DataTypes.INTEGER
   }, {});
   Orders.associate = function(models) {
-    Orders.belongsTo(models.User, {foreignKey: 'uid'});
+    Orders.belongsTo(models.Users, {foreignKey: 'uid'});
     Orders.hasMany(models.OrderProducts, {foreignKey: 'orderId'})
   };
-  sequelize.sync()
-  .then() => {
-    Orders.create({status: 'PENDING', uid: 1 });
-    Orders.create({status: 'DELIVERED',uid: 2});
-    Orders.create({status: 'DELIVERED', uid: 3});
-    Orders.create({status: 'PENDING', uid: 4});
-  };
+  // sequelize.sync()
+  // .then(() => {
+  //   Orders.create({status: 'PENDING', uid: 1 });
+  //   Orders.create({status: 'DELIVERED',uid: 2});
+  //   Orders.create({status: 'DELIVERED', uid: 3});
+  //   Orders.create({status: 'PENDING', uid: 4});
+  // });
   return Orders;
 };
